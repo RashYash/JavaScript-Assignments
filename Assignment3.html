@@ -1,0 +1,23 @@
+<script>
+    //crete two strings as arrays
+    const fruits=["Apple", "Banana", "Mango", "Orange", "Grapes"];
+    const vegetables = ["Carrot", "Spinach", "Broccoli", "Cabbage", "Tomato"];
+    
+    //get user input
+    let textC = prompt("Enter a fruit or vegetable.");
+
+    //Convert the user input first letter uppercaseand rest lower case
+    textC = textC.charAt(0).toUpperCase() + textC.slice(1).toLowerCase();
+
+    //compare user inputs with two strings
+    if(fruits.includes(textC)){
+    console.log("Input is a fruit");
+    }
+    else if(vegetables.includes(textC)){
+    console.log("Input is a vegetable");    
+    }
+    else{
+    console.log("Input does not exist in the list");
+    }
+    
+</script>
