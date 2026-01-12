@@ -1,0 +1,25 @@
+<script>
+    //creates an empty array
+    let numbers = []; 
+
+    //Creates a variable to store the total of numbers
+    let total = 0;
+
+
+    for (let i = 0; i < 3; i++) {
+    //take 10 numbers from user and concert to integers
+    let value = parseInt(prompt("Enter number " + (i + 1))); 
+
+    //store user input numbers in the array
+    numbers.push(value);
+    //calculate the total 
+    total=total+value
+    }
+    //calculate average
+    let average = total / numbers.length;
+
+    console.log("Array:", numbers);
+    console.log("Total:", total);
+    console.log("Average:", average);
+
+</script>
