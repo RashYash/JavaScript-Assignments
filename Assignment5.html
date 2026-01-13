@@ -1,0 +1,24 @@
+<script>
+
+    //Get a user input paragraph 
+    let paragraph = prompt("Enter a paragraph");
+
+    //convert the paragrph in to words
+    let words1 = paragraph.trim().toLowerCase().split(/\s+/);
+
+    //make a new array to store words without duplication
+    let words2 = [];
+
+    //avoid duplication when store numbers in new array
+    for (let i = 0; i < words1.length; i++) {
+        if (!words2.includes(words1[i])) {
+            words2.push(words1[i]);
+        }
+    }
+
+    //Arrange new array words in to alphabetical order
+    words2.sort();
+
+
+    console.log(words2);
+</script>
