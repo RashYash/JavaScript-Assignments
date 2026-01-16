@@ -1,0 +1,29 @@
+<script>
+    //Get the student count
+    const allStudents = parseInt(prompt("Enter number of students"));
+    const studentNames = [];
+    const studentMarks = [];
+
+    //get student names and marks from the user
+    for (let i = 0; i < allStudents; i++) {
+        const name = prompt("Enter student name");
+        const marks = parseInt(prompt("Enter student marks"));
+
+        studentNames.push(name);
+        studentMarks.push(marks);
+    }
+
+    //Find the largest name length
+    let maxNameLength = 0;
+    for (let i = 0; i < studentNames.length; i++) {
+        if (studentNames[i].length > maxNameLength) {
+            maxNameLength = studentNames[i].length;
+        }
+    }
+    for (let i = 0; i < studentNames.length; i++) {
+        const name = studentNames[i].padEnd(maxNameLength + 2, " ");
+        const marks = studentMarks[i].toString().padStart(4, " ");
+
+        console.log("|", name, "|", marks, "|");
+    }
+</script>
