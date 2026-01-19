@@ -26,6 +26,7 @@
 
     const inputs = [];
     let Result = [];
+    let score = 0;
 
     for (let i = 0; i < puzzle.length; i++) {
 
@@ -42,6 +43,7 @@
         const Input = inputs[i];
         if (Answer == Input) {
             Result = "CORRECT";
+            score += 10;
         }
         else {
             Result = "INCORRECT";
@@ -50,4 +52,6 @@
         console.log("|", Puzzle.padEnd(10, " "), "|", Answer.padEnd(10, " "), "|", Input.padEnd(10, " "), "|", Result.padEnd(10, " "), "|");
 
     }
+    console.log("");
+    console.log("Your final score:", score);
 </script>
