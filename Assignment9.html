@@ -1,0 +1,53 @@
+<!--
+<script>
+    const puzzle = ["C_T", "EL_PH_NT", "P_R_OT", "GI_AF_E"];
+    const answers = ["CAT", "ELEPHANT", "PARROT", "GIRAFFE"];
+
+    const inputs = [];
+
+    for (let i = 0; i < puzzle.length; i++) {
+        console.log(puzzle[i]);
+        let input = prompt("input the complete word");
+        inputs.push(input.toUpperCase());
+    }
+    for (let i = 0; i < puzzle.length; i++) {
+        const Puzzle = puzzle[i];
+        const Answer = answers[i];
+        const In = inputs[i];
+
+        console.log("|", Puzzle.padEnd(10, " "), "|", Answer.padEnd(10, " "), "|", In.padEnd(10, " "), "|");
+    }
+
+</script>
+-->
+<script>
+    const puzzle = ["C_T", "EL_PH_NT", "P_R_OT", "GI_AF_E"];
+    const answers = ["CAT", "ELEPHANT", "PARROT", "GIRAFFE"];
+
+    const inputs = [];
+    let Result = [];
+
+    for (let i = 0; i < puzzle.length; i++) {
+
+        let input = prompt(puzzle[i] + " Input the complete word");
+        inputs.push(input.toUpperCase());
+    }
+
+    console.log("|", "Puzzle".padEnd(10, " "), "|", "Answer".padEnd(10, " "), "|", "Input".padEnd(10, " "), "|", "Result".padEnd(10, " "), "|");
+    console.log("");
+    
+    for (let i = 0; i < puzzle.length; i++) {
+        const Puzzle = puzzle[i];
+        const Answer = answers[i];
+        const Input = inputs[i];
+        if (Answer == Input) {
+            Result = "CORRECT";
+        }
+        else {
+            Result = "INCORRECT";
+        }
+
+        console.log("|", Puzzle.padEnd(10, " "), "|", Answer.padEnd(10, " "), "|", Input.padEnd(10, " "), "|", Result.padEnd(10, " "), "|");
+
+    }
+</script>
