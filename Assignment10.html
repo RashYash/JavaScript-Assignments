@@ -1,0 +1,30 @@
+<script>
+
+    let studentCount = parseInt(prompt("Enter number of students in the class"));
+    let students = [];
+
+    for (let i = 0; i < studentCount; i++) {
+        let name = prompt("Enter name of student " + (i + 1));
+        let inputMarks = prompt("Enter 3 marks separated by commas (ex: 80,90,75)");
+        let marksArray = inputMarks.split(",").map(Number);
+        let student = {
+            name: name,
+            marks: marksArray
+        };
+        students.push(student);
+    }
+    //console.log(students);
+
+    for (let i = 0; i < students.length; i++) {
+        let total = 0;
+
+        for (let j = 0; j < students[i].marks.length; j++) {
+            total += students[i].marks[j];
+        }
+        let average = total / students[i].marks.length;
+        students[i].total = total;
+        students[i].average = average;
+    }
+    //console.log(students);
+
+</script>
