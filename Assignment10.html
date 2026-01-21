@@ -26,5 +26,10 @@
         students[i].average = average;
     }
     //console.log(students);
+    console.log("|", "Name".padEnd(10, " "), "|", "Total".padEnd(10, " "), "|", "Average".padEnd(10, " "), "|");
+    console.log("");
 
+    for (let i = 0; i < students.length; i++) {
+        console.log("|", students[i].name.padEnd(10, " "), "|", String(students[i].total).padEnd(10, " "), "|", students[i].average.toFixed(2).padEnd(10, " "), "|");
+    }
 </script>
