@@ -1,6 +1,6 @@
 [
   {
-    "name": "Central Province",
+    "province": "Central Province",
     "cities": [
       {
         "name": "Agarapathana",
@@ -1225,7 +1225,7 @@
     ]
   },
   {
-    "name": "Eastern Province",
+    "province": "Eastern Province",
     "cities": [
       {
         "name": "Addalaichenai",
@@ -1814,7 +1814,7 @@
     ]
   },
   {
-    "name": "North Central Province",
+    "province": "North Central Province",
     "cities": [
       {
         "name": "Alutwewa",
@@ -2579,7 +2579,7 @@
     ]
   },
   {
-    "name": "North Western Province",
+    "province": "North Western Province",
     "cities": [
       {
         "name": "Adippala",
@@ -3712,7 +3712,7 @@
     ]
   },
   {
-    "name": "Northern Province",
+    "province": "Northern Province",
     "cities": [
       {
         "name": "Jaffna",
@@ -3733,7 +3733,7 @@
     ]
   },
   {
-    "name": "Province Of Uva",
+    "province": "Province Of Uva",
     "cities": [
       {
         "name": "Akkarasiyaya",
@@ -4498,7 +4498,7 @@
     ]
   },
   {
-    "name": "Sabaragamuwa Province",
+    "province": "Sabaragamuwa Province",
     "cities": [
       {
         "name": "Akarella",
@@ -5379,7 +5379,7 @@
     ]
   },
   {
-    "name": "Southern Province",
+    "province": "Southern Province",
     "cities": [
       {
         "name": "Agaliya",
@@ -6324,7 +6324,7 @@
     ]
   },
   {
-    "name": "Western Province",
+    "province": "Western Province",
     "cities": [
       {
         "name": "Agalawatta",
