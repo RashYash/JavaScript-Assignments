@@ -19,7 +19,7 @@ Object.keys(inputData).forEach(provinceName => {
     });
 
     output.push({
-        name: provinceName,
+        province: provinceName,
         cities: citiesArray
     });
 });
@@ -28,4 +28,5 @@ Object.keys(inputData).forEach(provinceName => {
 fs.writeFileSync("output02.json", JSON.stringify(output, null, 2));
 
 console.log("output02.json was created successfully");
+
 
